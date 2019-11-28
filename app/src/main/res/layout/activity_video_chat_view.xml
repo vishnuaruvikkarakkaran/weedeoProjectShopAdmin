@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.call.VideoCallActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/local_video_view_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorCallBackground">
+
+            <ImageView
+                android:layout_width="@dimen/dimen_50dp"
+                android:layout_height="@dimen/dimen_50dp"
+                android:layout_centerInParent="true"
+                android:contentDescription="@string/icvideocalldummy"
+                android:src="@drawable/ic_launcher_shade" />
+
+        </RelativeLayout>
+
+
+        <FrameLayout
+            android:id="@+id/remote_video_view_container"
+            android:layout_width="@dimen/dimen_100dp"
+            android:layout_height="@dimen/dimen_120dp"
+            android:layout_margin="@dimen/dimen_20dp"
+            android:visibility="gone">
+
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlUserMuteVideo"
+            android:layout_width="@dimen/dimen_110dp"
+            android:layout_height="@dimen/dimen_130dp"
+            android:layout_marginStart="@dimen/dimen_15dp"
+            android:layout_marginTop="@dimen/dimen_15dp"
+            android:background="@drawable/call_item_transparent">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/ivRemoteUserImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:alpha="0.2"
+                    android:background="@drawable/test_ic_user"
+                    android:contentDescription="@string/icvideocalldummy"
+                    android:scaleType="centerCrop" />
+
+                <ImageView
+                    android:layout_width="@dimen/dimen_30dp"
+                    android:layout_height="@dimen/dimen_25dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_no_video"
+                    android:contentDescription="@string/icvideocalldummy"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/tvRemoteUserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="@dimen/dimen_5dp"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/str_user_dummy"
+                    android:textColor="@color/white" />
+            </FrameLayout>
+
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/ivReport"
+            android:layout_width="@dimen/dimen_20dp"
+            android:layout_height="@dimen/dimen_5dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:layout_marginEnd="@dimen/dimen_20dp"
+            android:background="@drawable/ic_dotted_menu"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:layout_width="@dimen/dimen_50dp"
+            android:layout_height="@dimen/dimen_50dp"
+            android:layout_below="@+id/ivReport"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:layout_marginEnd="@dimen/dimen_20dp"
+            android:contentDescription="@string/icvideocalldummy"
+            android:src="@drawable/ic_launcher_shade" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/llBottom"
+            android:layout_marginBottom="@dimen/dimen_40dp"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/dimen_5dp"
+            android:paddingBottom="@dimen/dimen_5dp">
+
+            <LinearLayout
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorTransparent"
+                    android:src="@drawable/ic_cart"
+                    app:borderWidth="@dimen/dimen_0dp"
+                    app:fabSize="mini" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorTransparent"
+                    android:src="@drawable/ic_cart_list"
+                    app:borderWidth="@dimen/dimen_0dp"
+                    app:fabSize="mini" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llBottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/dimen_24dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/btn_switch_camera"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="@dimen/dimen_30dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/icvideocallswitchcamera"
+                android:onClick="onSwitchCameraClicked"
+                android:src="@drawable/switch_camera" />
+
+            <ImageView
+                android:id="@+id/ivTakePhoto"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="@dimen/dimen_30dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/icvideocallcapturephoto"
+                android:src="@drawable/cam_pic" />
+
+            <ImageView
+                android:id="@+id/btn_mute"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="@dimen/dimen_30dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/icvideocallmute"
+                android:onClick="onLocalAudioMuteClicked"
+                android:src="@drawable/ic_audio_unmute" />
+
+            <ImageView
+                android:id="@+id/btn_scan"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="@dimen/dimen_30dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/icvideocallqrcode"
+                android:src="@drawable/ic_qrcode" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

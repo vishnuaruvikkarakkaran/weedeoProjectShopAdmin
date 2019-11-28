@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    tools:context=".VerifyPhoneActivity">
+
+
+<LinearLayout
+    android:gravity="start"
+    android:layout_marginTop="@dimen/dimen_46dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_centerInParent="true"
+    android:layout_marginStart="@dimen/dimen_26dp"
+    android:layout_marginEnd="@dimen/dimen_26dp"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:layout_marginStart="@dimen/dimen_16dp"
+        android:id="@+id/textView6"
+        android:layout_marginTop="@dimen/dimen_26dp"
+        android:layout_gravity="start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/opensans_bold"
+        android:text="Change Mobile Number"
+        android:textColor="@color/colorBlack"
+        android:layout_marginBottom="@dimen/dimen_26dp"
+        android:textSize="@dimen/dimen_22dp"
+         />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/username_text_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_36dp"
+        android:layout_margin="@dimen/dimen_16dp"
+        android:gravity="center"
+        >
+
+        <EditText
+            android:id="@+id/inputnumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:gravity="start"
+            android:hint="Mobile Number"
+            android:inputType="number"
+            android:theme="@style/underline"
+            android:maxLength="10"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/dimen_16dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/signInbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/darkRed"
+        android:text="Continue"
+        android:textAllCaps="false"
+        android:textSize="@dimen/dimen_16dp"
+        android:layout_margin="@dimen/dimen_16dp"
+        android:fontFamily="@font/opensans_bold"
+        android:textColor="@color/colorWhite"
+        />
+
+</LinearLayout>
+
+
+
+
+</RelativeLayout>

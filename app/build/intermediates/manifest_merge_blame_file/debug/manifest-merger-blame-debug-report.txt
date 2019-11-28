@@ -1,0 +1,521 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.weedeo.shopadmin"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="23"
+8-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="28" />
+9-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:6:5-67
+11-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:6:22-64
+12    <uses-permission android:name="android.permission.CAMERA" />
+12-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:7:5-65
+12-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:7:22-62
+13    <uses-permission android:name="android.permission.READ_CONTACTS" />
+13-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:8:5-72
+13-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:8:22-69
+14    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+14-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:9:5-71
+14-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:9:22-68
+15    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+15-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:10:5-80
+15-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:10:22-77
+16    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+16-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:11:5-81
+16-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:11:22-78
+17    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+17-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:12:5-79
+17-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:12:22-76
+18    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+18-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:13:5-79
+18-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:13:22-76
+19    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+19-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:14:5-70
+19-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:14:22-67
+20    <uses-permission android:name="android.permission.READ_SMS" />
+20-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:15:5-67
+20-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:15:22-64
+21    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+21-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:16:5-81
+21-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:16:22-78
+22    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+22-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:17:5-80
+22-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:17:22-77
+23    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+23-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:18:5-75
+23-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:18:22-72
+24    <uses-permission android:name="android.permission.BLUETOOTH" />
+24-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:19:5-68
+24-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:19:22-65
+25    <uses-permission android:name="android.permission.WAKE_LOCK" />
+25-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:20:5-68
+25-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:20:22-65
+26    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+26-->[com.google.android.libraries.places:places:2.0.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\7e4ac87fa23094edf48013ee9f1aeee8\places-2.0.0\AndroidManifest.xml:10:5-76
+26-->[com.google.android.libraries.places:places:2.0.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\7e4ac87fa23094edf48013ee9f1aeee8\places-2.0.0\AndroidManifest.xml:10:22-73
+27
+28    <uses-feature
+28-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\f9fe9d4c260b13ae904f5ca8797460cb\play-services-maps-17.0.0\AndroidManifest.xml:26:5-28:35
+29        android:glEsVersion="0x00020000"
+29-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\f9fe9d4c260b13ae904f5ca8797460cb\play-services-maps-17.0.0\AndroidManifest.xml:27:9-41
+30        android:required="true" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+30-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\f9fe9d4c260b13ae904f5ca8797460cb\play-services-maps-17.0.0\AndroidManifest.xml:28:9-32
+31    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+31-->[com.google.firebase:firebase-iid:20.0.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\ca80f80c1b3cd003356d330fd79e3f6f\firebase-iid-20.0.0\AndroidManifest.xml:26:5-82
+31-->[com.google.firebase:firebase-iid:20.0.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\ca80f80c1b3cd003356d330fd79e3f6f\firebase-iid-20.0.0\AndroidManifest.xml:26:22-79
+32    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+32-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\89b2104a691a88e39abbe2d392f94dde\play-services-measurement-17.2.0\AndroidManifest.xml:26:5-110
+32-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\89b2104a691a88e39abbe2d392f94dde\play-services-measurement-17.2.0\AndroidManifest.xml:26:22-107
+33
+34    <application
+34-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:22:5-133:19
+35        android:name="com.weedeo.shopadmin.base.ApplicationClass"
+35-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:23:9-46
+36        android:allowBackup="true"
+36-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:24:9-35
+37        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+37-->[androidx.core:core:1.1.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\f53406f32ebd3dca9c9690888dea75f1\core-1.1.0\AndroidManifest.xml:24:18-86
+38        android:debuggable="true"
+39        android:icon="@drawable/ic_wideologofinal"
+39-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:25:9-51
+40        android:label="@string/app_name"
+40-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:26:9-41
+41        android:roundIcon="@drawable/ic_wideologofinal"
+41-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:27:9-56
+42        android:supportsRtl="true"
+42-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:28:9-35
+43        android:testOnly="true"
+44        android:theme="@style/Theme.Design.Light.NoActionBar" >
+44-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:29:9-62
+45        <activity android:name="com.weedeo.shopadmin.modules.splash.SplashActivity" >
+45-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:32:9-38:20
+45-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:32:19-64
+46            <intent-filter>
+46-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:33:13-37:29
+47                <action android:name="android.intent.action.MAIN" />
+47-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:34:17-69
+47-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:34:25-66
+48
+49                <category android:name="android.intent.category.LAUNCHER" />
+49-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:36:17-77
+49-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:36:27-74
+50            </intent-filter>
+51        </activity>
+52        <activity android:name="com.weedeo.shopadmin.timing.TimingActivity" />
+52-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:40:9-59
+52-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:40:19-56
+53        <activity
+53-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:42:9-45:59
+54            android:name="com.weedeo.shopadmin.modules.call.CallAnsweringActivity"
+54-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:43:13-63
+55            android:screenOrientation="portrait"
+55-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:44:13-49
+56            android:theme="@style/AppThemeNoWhiteSpace" />
+56-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:45:13-56
+57        <activity
+57-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:47:9-50:59
+58            android:name="com.weedeo.shopadmin.modules.call.VideoChatViewActivity"
+58-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:48:13-63
+59            android:screenOrientation="portrait"
+59-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:49:13-49
+60            android:theme="@style/AppThemeNoWhiteSpace" />
+60-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:50:13-56
+61        <activity
+61-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:52:9-57:20
+62            android:name="com.weedeo.shopadmin.modules.shopTimming.ShopTimming"
+62-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:53:13-60
+63            android:label="Shop Timing"
+63-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:56:13-40
+64            android:screenOrientation="portrait"
+64-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:54:13-49
+65            android:windowSoftInputMode="stateHidden" >
+65-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:55:13-54
+66        </activity>
+67        <activity
+67-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:59:9-62:50
+68            android:name="com.weedeo.shopadmin.modules$DashBoard$NavigationDrawerActivity"
+68-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:60:13-71
+69            android:label="@string/title_activity_navigation_drawer"
+69-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:61:13-69
+70            android:theme="@style/NoActionBar" />
+70-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:62:13-47
+71        <activity
+71-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:64:9-67:59
+72            android:name="com.weedeo.shopadmin.modules.profile.ProfileActivity"
+72-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:65:13-60
+73            android:screenOrientation="portrait"
+73-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:66:13-49
+74            android:theme="@style/AppThemeNoWhiteSpace" />
+74-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:67:13-56
+75        <activity
+75-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:69:9-73:59
+76            android:name="com.weedeo.shopadmin.modules.map.MapActivity"
+76-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:70:13-52
+77            android:launchMode="singleTop"
+77-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:71:13-43
+78            android:screenOrientation="portrait"
+78-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:72:13-49
+79            android:theme="@style/AppTheme.NoActionBar" />
+79-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:73:13-56
+80        <activity android:name="com.soundcloud.android.crop.CropImageActivity" />
+80-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:75:9-82
+80-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:75:19-79
+81        <activity android:name="com.weedeo.shopadmin.modules.map.PlaceActivity" />
+81-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:76:9-63
+81-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:76:19-60
+82        <activity android:name="com.weedeo.shopadmin.modules.otpPage.OtpverificationActivity" />
+82-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:77:9-77
+82-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:77:19-74
+83        <activity android:name="com.weedeo.shopadmin.modules.phonesigninpage.PhoneSignInActivity" />
+83-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:78:9-81
+83-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:78:19-78
+84        <activity android:name="com.weedeo.shopadmin.MainActivity" />
+84-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:79:9-50
+84-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:79:19-47
+85        <activity android:name="com.weedeo.shopadmin.modules.home.HomeActivity" />
+85-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:80:9-63
+85-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:80:19-60
+86        <activity
+86-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:82:9-85:59
+87            android:name="com.yalantis.ucrop.UCropActivity"
+87-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:83:13-60
+88            android:screenOrientation="portrait"
+88-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:84:13-49
+89            android:theme="@style/AppTheme.NoActionBar" />
+89-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:85:13-56
+90        <activity android:name="com.weedeo.shopadmin.modules.DashBoard.NavigationDrawerActivity" />
+90-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:87:9-89:50
+90-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:88:13-71
+91
+92        <meta-data
+92-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:91:9-93:55
+93            android:name="com.google.android.geo.API_KEY"
+93-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:92:13-58
+94            android:value="@string/google_maps_key" />
+94-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:93:13-52
+95
+96        <receiver
+96-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:95:9-101:20
+97            android:name="com.weedeo.shopadmin.modules.otpPage.SMSRecever"
+97-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:96:13-55
+98            android:exported="true" >
+98-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:97:13-36
+99            <intent-filter>
+99-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:98:13-100:29
+100                <action android:name="com.google.android.gms.auth.api.phone.SMS_RETRIEVED" />
+100-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:99:17-94
+100-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:99:25-91
+101            </intent-filter>
+102        </receiver>
+103
+104        <service
+104-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:104:9-112:19
+105            android:name="com.weedeo.shopadmin.Utils.MyFirebaseMessagingServices"
+105-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:105:13-62
+106            android:exported="false" >
+106-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:106:13-37
+107            <intent-filter>
+107-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:107:13-111:29
+108                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+108-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:108:17-78
+108-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:108:25-75
+109                <action android:name="android.intent.action.SCREEN_OFF" />
+109-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:109:17-75
+109-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:109:25-72
+110                <action android:name="android.intent.action.SCREEN_ON" />
+110-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:110:17-74
+110-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:110:25-71
+111            </intent-filter>
+112        </service>
+113        <service
+113-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:114:9-116:38
+114            android:name="com.amazonaws.mobileconnectors.s3.transferutility.TransferService"
+114-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:115:13-93
+115            android:enabled="true" />
+115-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:116:13-35
+116        <service
+116-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:118:9-120:40
+117            android:name="com.weedeo.shopadmin.modules.map.FetchAddressIntentService"
+117-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:119:13-66
+118            android:exported="false" />
+118-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:120:13-37
+119
+120        <provider
+121            android:name="com.weedeo.shopadmin.Utils.MyCustomFileProvider"
+121-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:123:13-55
+122            android:authorities="com.weedeo.shopadmin.provider"
+122-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:124:13-60
+123            android:exported="false"
+123-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:125:13-37
+124            android:grantUriPermissions="true" >
+124-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:126:13-47
+125            <meta-data
+125-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:128:13-130:54
+126                android:name="android.support.FILE_PROVIDER_PATHS"
+126-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:129:17-67
+127                android:resource="@xml/file_paths" />
+127-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:130:17-51
+128        </provider>
+129
+130        <activity
+130-->[com.karumi:dexter:5.0.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\61e8740b000b76e45646e871afe6f2bf\jetified-dexter-5.0.0\AndroidManifest.xml:27:9-29:72
+131            android:name="com.karumi.dexter.DexterActivity"
+131-->[com.karumi:dexter:5.0.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\61e8740b000b76e45646e871afe6f2bf\jetified-dexter-5.0.0\AndroidManifest.xml:28:13-60
+132            android:theme="@style/Dexter.Internal.Theme.Transparent" /> <!-- Autocomplete -->
+132-->[com.karumi:dexter:5.0.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\61e8740b000b76e45646e871afe6f2bf\jetified-dexter-5.0.0\AndroidManifest.xml:29:13-69
+133        <activity
+133-->[com.google.android.libraries.places:places:2.0.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\7e4ac87fa23094edf48013ee9f1aeee8\places-2.0.0\AndroidManifest.xml:16:9-23:20
+134            android:name="com.google.android.libraries.places.widget.AutocompleteActivity"
+134-->[com.google.android.libraries.places:places:2.0.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\7e4ac87fa23094edf48013ee9f1aeee8\places-2.0.0\AndroidManifest.xml:17:13-91
+135            android:exported="false"
+135-->[com.google.android.libraries.places:places:2.0.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\7e4ac87fa23094edf48013ee9f1aeee8\places-2.0.0\AndroidManifest.xml:18:13-37
+136            android:hardwareAccelerated="true"
+136-->[com.google.android.libraries.places:places:2.0.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\7e4ac87fa23094edf48013ee9f1aeee8\places-2.0.0\AndroidManifest.xml:19:13-47
+137            android:label="@string/places_autocomplete_label"
+137-->[com.google.android.libraries.places:places:2.0.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\7e4ac87fa23094edf48013ee9f1aeee8\places-2.0.0\AndroidManifest.xml:20:13-62
+138            android:theme="@style/PlacesAutocompleteThemeOverlay"
+138-->[com.google.android.libraries.places:places:2.0.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\7e4ac87fa23094edf48013ee9f1aeee8\places-2.0.0\AndroidManifest.xml:21:13-66
+139            android:windowSoftInputMode="stateAlwaysVisible|adjustPan" >
+139-->[com.google.android.libraries.places:places:2.0.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\7e4ac87fa23094edf48013ee9f1aeee8\places-2.0.0\AndroidManifest.xml:22:13-71
+140        </activity>
+141        <activity
+141-->[com.github.esafirm.android-image-picker:imagepicker:2.0.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\1ea0ed3ef4853b0e6af63812ea0637eb\imagepicker-2.0.0\AndroidManifest.xml:16:9-19:50
+142            android:name="com.esafirm.imagepicker.features.ImagePickerActivity"
+142-->[com.github.esafirm.android-image-picker:imagepicker:2.0.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\1ea0ed3ef4853b0e6af63812ea0637eb\imagepicker-2.0.0\AndroidManifest.xml:17:13-80
+143            android:configChanges="orientation|screenSize"
+143-->[com.github.esafirm.android-image-picker:imagepicker:2.0.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\1ea0ed3ef4853b0e6af63812ea0637eb\imagepicker-2.0.0\AndroidManifest.xml:18:13-59
+144            android:theme="@style/ef_AppTheme" />
+144-->[com.github.esafirm.android-image-picker:imagepicker:2.0.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\1ea0ed3ef4853b0e6af63812ea0637eb\imagepicker-2.0.0\AndroidManifest.xml:19:13-47
+145
+146        <provider
+146-->[com.github.esafirm.android-image-picker:imagepicker:2.0.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\1ea0ed3ef4853b0e6af63812ea0637eb\imagepicker-2.0.0\AndroidManifest.xml:21:9-29:20
+147            android:name="com.esafirm.imagepicker.helper.ImagePickerFileProvider"
+147-->[com.github.esafirm.android-image-picker:imagepicker:2.0.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\1ea0ed3ef4853b0e6af63812ea0637eb\imagepicker-2.0.0\AndroidManifest.xml:22:13-82
+148            android:authorities="com.weedeo.shopadmin.imagepicker.provider"
+148-->[com.github.esafirm.android-image-picker:imagepicker:2.0.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\1ea0ed3ef4853b0e6af63812ea0637eb\imagepicker-2.0.0\AndroidManifest.xml:23:13-72
+149            android:exported="false"
+149-->[com.github.esafirm.android-image-picker:imagepicker:2.0.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\1ea0ed3ef4853b0e6af63812ea0637eb\imagepicker-2.0.0\AndroidManifest.xml:24:13-37
+150            android:grantUriPermissions="true" >
+150-->[com.github.esafirm.android-image-picker:imagepicker:2.0.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\1ea0ed3ef4853b0e6af63812ea0637eb\imagepicker-2.0.0\AndroidManifest.xml:25:13-47
+151            <meta-data
+151-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:128:13-130:54
+152                android:name="android.support.FILE_PROVIDER_PATHS"
+152-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:129:17-67
+153                android:resource="@xml/image_picker_provider_paths" />
+153-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:130:17-51
+154        </provider>
+155
+156        <activity
+156-->[com.google.firebase:firebase-auth:19.1.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\f988e56dc4534ccee99749f80f59797d\firebase-auth-19.1.0\AndroidManifest.xml:24:9-31:50
+157            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+157-->[com.google.firebase:firebase-auth:19.1.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\f988e56dc4534ccee99749f80f59797d\firebase-auth-19.1.0\AndroidManifest.xml:25:13-85
+158            android:excludeFromRecents="true"
+158-->[com.google.firebase:firebase-auth:19.1.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\f988e56dc4534ccee99749f80f59797d\firebase-auth-19.1.0\AndroidManifest.xml:26:13-46
+159            android:exported="true"
+159-->[com.google.firebase:firebase-auth:19.1.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\f988e56dc4534ccee99749f80f59797d\firebase-auth-19.1.0\AndroidManifest.xml:27:13-36
+160            android:launchMode="singleTask"
+160-->[com.google.firebase:firebase-auth:19.1.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\f988e56dc4534ccee99749f80f59797d\firebase-auth-19.1.0\AndroidManifest.xml:28:13-44
+161            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+161-->[com.google.firebase:firebase-auth:19.1.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\f988e56dc4534ccee99749f80f59797d\firebase-auth-19.1.0\AndroidManifest.xml:29:13-102
+162            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+162-->[com.google.firebase:firebase-auth:19.1.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\f988e56dc4534ccee99749f80f59797d\firebase-auth-19.1.0\AndroidManifest.xml:30:13-72
+163
+164        <service
+164-->[com.google.firebase:firebase-auth:19.1.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\f988e56dc4534ccee99749f80f59797d\firebase-auth-19.1.0\AndroidManifest.xml:33:9-39:19
+165            android:name="com.google.firebase.components.ComponentDiscoveryService"
+165-->[com.google.firebase:firebase-auth:19.1.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\f988e56dc4534ccee99749f80f59797d\firebase-auth-19.1.0\AndroidManifest.xml:34:13-84
+166            android:directBootAware="true"
+166-->[com.google.firebase:firebase-common:19.2.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\4e4713f3772bf141a33b2016ad5ef6a5\firebase-common-19.2.0\AndroidManifest.xml:15:13-43
+167            android:exported="false" >
+167-->[com.google.firebase:firebase-auth:19.1.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\f988e56dc4534ccee99749f80f59797d\firebase-auth-19.1.0\AndroidManifest.xml:35:13-37
+168            <meta-data
+168-->[com.google.firebase:firebase-auth:19.1.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\f988e56dc4534ccee99749f80f59797d\firebase-auth-19.1.0\AndroidManifest.xml:36:13-38:85
+169                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+169-->[com.google.firebase:firebase-auth:19.1.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\f988e56dc4534ccee99749f80f59797d\firebase-auth-19.1.0\AndroidManifest.xml:37:17-109
+170                android:value="com.google.firebase.components.ComponentRegistrar" />
+170-->[com.google.firebase:firebase-auth:19.1.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\f988e56dc4534ccee99749f80f59797d\firebase-auth-19.1.0\AndroidManifest.xml:38:17-82
+171            <meta-data
+171-->[com.google.firebase:firebase-database:19.2.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\67bdcd964bc7c8c757cbb9be5e1a777a\firebase-database-19.2.0\AndroidManifest.xml:32:13-34:85
+172                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+172-->[com.google.firebase:firebase-database:19.2.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\67bdcd964bc7c8c757cbb9be5e1a777a\firebase-database-19.2.0\AndroidManifest.xml:33:17-109
+173                android:value="com.google.firebase.components.ComponentRegistrar" />
+173-->[com.google.firebase:firebase-database:19.2.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\67bdcd964bc7c8c757cbb9be5e1a777a\firebase-database-19.2.0\AndroidManifest.xml:34:17-82
+174            <meta-data
+174-->[com.google.android.gms:play-services-measurement-api:17.2.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\a6c78bf1ef90f35bac6d658cc0a12d37\play-services-measurement-api-17.2.0\AndroidManifest.xml:30:13-32:85
+175                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+175-->[com.google.android.gms:play-services-measurement-api:17.2.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\a6c78bf1ef90f35bac6d658cc0a12d37\play-services-measurement-api-17.2.0\AndroidManifest.xml:31:17-139
+176                android:value="com.google.firebase.components.ComponentRegistrar" />
+176-->[com.google.android.gms:play-services-measurement-api:17.2.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\a6c78bf1ef90f35bac6d658cc0a12d37\play-services-measurement-api-17.2.0\AndroidManifest.xml:32:17-82
+177            <meta-data
+177-->[com.google.firebase:firebase-iid:20.0.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\ca80f80c1b3cd003356d330fd79e3f6f\firebase-iid-20.0.0\AndroidManifest.xml:32:13-34:85
+178                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+178-->[com.google.firebase:firebase-iid:20.0.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\ca80f80c1b3cd003356d330fd79e3f6f\firebase-iid-20.0.0\AndroidManifest.xml:33:17-96
+179                android:value="com.google.firebase.components.ComponentRegistrar" />
+179-->[com.google.firebase:firebase-iid:20.0.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\ca80f80c1b3cd003356d330fd79e3f6f\firebase-iid-20.0.0\AndroidManifest.xml:34:17-82
+180        </service>
+181
+182        <provider
+182-->[com.crashlytics.sdk.android:crashlytics:2.10.1] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\5ab25f7004caa765b213fd1eaf04f0a5\jetified-crashlytics-2.10.1\AndroidManifest.xml:19:9-23:38
+183            android:name="com.crashlytics.android.CrashlyticsInitProvider"
+183-->[com.crashlytics.sdk.android:crashlytics:2.10.1] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\5ab25f7004caa765b213fd1eaf04f0a5\jetified-crashlytics-2.10.1\AndroidManifest.xml:20:13-75
+184            android:authorities="com.weedeo.shopadmin.crashlyticsinitprovider"
+184-->[com.crashlytics.sdk.android:crashlytics:2.10.1] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\5ab25f7004caa765b213fd1eaf04f0a5\jetified-crashlytics-2.10.1\AndroidManifest.xml:21:13-75
+185            android:exported="false"
+185-->[com.crashlytics.sdk.android:crashlytics:2.10.1] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\5ab25f7004caa765b213fd1eaf04f0a5\jetified-crashlytics-2.10.1\AndroidManifest.xml:22:13-37
+186            android:initOrder="90" />
+186-->[com.crashlytics.sdk.android:crashlytics:2.10.1] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\5ab25f7004caa765b213fd1eaf04f0a5\jetified-crashlytics-2.10.1\AndroidManifest.xml:23:13-35
+187        <!--
+188             FirebaseMessagingService performs security checks at runtime,
+189             but set to not exported to explicitly avoid allowing another app to call it.
+190        -->
+191        <service
+191-->[com.google.firebase:firebase-messaging:20.0.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\d3441f31fd3a10351a99c7917fc51341\jetified-firebase-messaging-20.0.0\AndroidManifest.xml:28:9-34:19
+192            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+192-->[com.google.firebase:firebase-messaging:20.0.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\d3441f31fd3a10351a99c7917fc51341\jetified-firebase-messaging-20.0.0\AndroidManifest.xml:29:13-82
+193            android:exported="false" >
+193-->[com.google.firebase:firebase-messaging:20.0.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\d3441f31fd3a10351a99c7917fc51341\jetified-firebase-messaging-20.0.0\AndroidManifest.xml:30:13-37
+194            <intent-filter android:priority="-500" >
+194-->[com.google.firebase:firebase-messaging:20.0.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\d3441f31fd3a10351a99c7917fc51341\jetified-firebase-messaging-20.0.0\AndroidManifest.xml:31:13-33:29
+194-->[com.google.firebase:firebase-messaging:20.0.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\d3441f31fd3a10351a99c7917fc51341\jetified-firebase-messaging-20.0.0\AndroidManifest.xml:31:28-51
+195                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+195-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:108:17-78
+195-->E:\Vishnu V Nair\weedeo-shopadmin-android28112019\app\src\main\AndroidManifest.xml:108:25-75
+196            </intent-filter>
+197        </service>
+198
+199        <activity
+199-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\3528c76c42e8900ce978704b63a92d14\play-services-auth-17.0.0\AndroidManifest.xml:23:9-27:75
+200            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+200-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\3528c76c42e8900ce978704b63a92d14\play-services-auth-17.0.0\AndroidManifest.xml:24:13-93
+201            android:excludeFromRecents="true"
+201-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\3528c76c42e8900ce978704b63a92d14\play-services-auth-17.0.0\AndroidManifest.xml:25:13-46
+202            android:exported="false"
+202-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\3528c76c42e8900ce978704b63a92d14\play-services-auth-17.0.0\AndroidManifest.xml:26:13-37
+203            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+203-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\3528c76c42e8900ce978704b63a92d14\play-services-auth-17.0.0\AndroidManifest.xml:27:13-72
+204        <!--
+205            Service handling Google Sign-In user revocation. For apps that do not integrate with
+206            Google Sign-In, this service will never be started.
+207        -->
+208        <service
+208-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\3528c76c42e8900ce978704b63a92d14\play-services-auth-17.0.0\AndroidManifest.xml:33:9-36:110
+209            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+209-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\3528c76c42e8900ce978704b63a92d14\play-services-auth-17.0.0\AndroidManifest.xml:34:13-89
+210            android:exported="true"
+210-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\3528c76c42e8900ce978704b63a92d14\play-services-auth-17.0.0\AndroidManifest.xml:35:13-36
+211            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" /> <!-- Needs to be explicitly declared on P+ -->
+211-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\3528c76c42e8900ce978704b63a92d14\play-services-auth-17.0.0\AndroidManifest.xml:36:13-107
+212        <uses-library
+212-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\f9fe9d4c260b13ae904f5ca8797460cb\play-services-maps-17.0.0\AndroidManifest.xml:33:9-35:40
+213            android:name="org.apache.http.legacy"
+213-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\f9fe9d4c260b13ae904f5ca8797460cb\play-services-maps-17.0.0\AndroidManifest.xml:34:13-50
+214            android:required="false" />
+214-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\f9fe9d4c260b13ae904f5ca8797460cb\play-services-maps-17.0.0\AndroidManifest.xml:35:13-37
+215
+216        <receiver
+216-->[com.google.firebase:firebase-iid:20.0.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\ca80f80c1b3cd003356d330fd79e3f6f\firebase-iid-20.0.0\AndroidManifest.xml:37:9-44:20
+217            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+217-->[com.google.firebase:firebase-iid:20.0.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\ca80f80c1b3cd003356d330fd79e3f6f\firebase-iid-20.0.0\AndroidManifest.xml:38:13-78
+218            android:exported="true"
+218-->[com.google.firebase:firebase-iid:20.0.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\ca80f80c1b3cd003356d330fd79e3f6f\firebase-iid-20.0.0\AndroidManifest.xml:39:13-36
+219            android:permission="com.google.android.c2dm.permission.SEND" >
+219-->[com.google.firebase:firebase-iid:20.0.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\ca80f80c1b3cd003356d330fd79e3f6f\firebase-iid-20.0.0\AndroidManifest.xml:40:13-73
+220            <intent-filter>
+220-->[com.google.firebase:firebase-iid:20.0.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\ca80f80c1b3cd003356d330fd79e3f6f\firebase-iid-20.0.0\AndroidManifest.xml:41:13-43:29
+221                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+221-->[com.google.firebase:firebase-iid:20.0.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\ca80f80c1b3cd003356d330fd79e3f6f\firebase-iid-20.0.0\AndroidManifest.xml:42:17-81
+221-->[com.google.firebase:firebase-iid:20.0.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\ca80f80c1b3cd003356d330fd79e3f6f\firebase-iid-20.0.0\AndroidManifest.xml:42:25-78
+222            </intent-filter>
+223        </receiver>
+224
+225        <activity
+225-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\2a525be8eb146312b137b897bcb19738\play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
+226            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+226-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\2a525be8eb146312b137b897bcb19738\play-services-base-17.1.0\AndroidManifest.xml:24:13-79
+227            android:exported="false"
+227-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\2a525be8eb146312b137b897bcb19738\play-services-base-17.1.0\AndroidManifest.xml:25:13-37
+228            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+228-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\2a525be8eb146312b137b897bcb19738\play-services-base-17.1.0\AndroidManifest.xml:26:13-72
+229
+230        <receiver
+230-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\89b2104a691a88e39abbe2d392f94dde\play-services-measurement-17.2.0\AndroidManifest.xml:29:9-33:20
+231            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+231-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\89b2104a691a88e39abbe2d392f94dde\play-services-measurement-17.2.0\AndroidManifest.xml:30:13-85
+232            android:enabled="true"
+232-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\89b2104a691a88e39abbe2d392f94dde\play-services-measurement-17.2.0\AndroidManifest.xml:31:13-35
+233            android:exported="false" >
+233-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\89b2104a691a88e39abbe2d392f94dde\play-services-measurement-17.2.0\AndroidManifest.xml:32:13-37
+234        </receiver>
+235        <receiver
+235-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\89b2104a691a88e39abbe2d392f94dde\play-services-measurement-17.2.0\AndroidManifest.xml:34:9-42:20
+236            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+236-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\89b2104a691a88e39abbe2d392f94dde\play-services-measurement-17.2.0\AndroidManifest.xml:35:13-100
+237            android:enabled="true"
+237-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\89b2104a691a88e39abbe2d392f94dde\play-services-measurement-17.2.0\AndroidManifest.xml:36:13-35
+238            android:exported="true"
+238-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\89b2104a691a88e39abbe2d392f94dde\play-services-measurement-17.2.0\AndroidManifest.xml:37:13-36
+239            android:permission="android.permission.INSTALL_PACKAGES" >
+239-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\89b2104a691a88e39abbe2d392f94dde\play-services-measurement-17.2.0\AndroidManifest.xml:38:13-69
+240            <intent-filter>
+240-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\89b2104a691a88e39abbe2d392f94dde\play-services-measurement-17.2.0\AndroidManifest.xml:39:13-41:29
+241                <action android:name="com.android.vending.INSTALL_REFERRER" />
+241-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\89b2104a691a88e39abbe2d392f94dde\play-services-measurement-17.2.0\AndroidManifest.xml:40:17-79
+241-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\89b2104a691a88e39abbe2d392f94dde\play-services-measurement-17.2.0\AndroidManifest.xml:40:25-76
+242            </intent-filter>
+243        </receiver>
+244
+245        <service
+245-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\89b2104a691a88e39abbe2d392f94dde\play-services-measurement-17.2.0\AndroidManifest.xml:44:9-47:40
+246            android:name="com.google.android.gms.measurement.AppMeasurementService"
+246-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\89b2104a691a88e39abbe2d392f94dde\play-services-measurement-17.2.0\AndroidManifest.xml:45:13-84
+247            android:enabled="true"
+247-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\89b2104a691a88e39abbe2d392f94dde\play-services-measurement-17.2.0\AndroidManifest.xml:46:13-35
+248            android:exported="false" />
+248-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\89b2104a691a88e39abbe2d392f94dde\play-services-measurement-17.2.0\AndroidManifest.xml:47:13-37
+249        <service
+249-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\89b2104a691a88e39abbe2d392f94dde\play-services-measurement-17.2.0\AndroidManifest.xml:48:9-52:72
+250            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+250-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\89b2104a691a88e39abbe2d392f94dde\play-services-measurement-17.2.0\AndroidManifest.xml:49:13-87
+251            android:enabled="true"
+251-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\89b2104a691a88e39abbe2d392f94dde\play-services-measurement-17.2.0\AndroidManifest.xml:50:13-35
+252            android:exported="false"
+252-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\89b2104a691a88e39abbe2d392f94dde\play-services-measurement-17.2.0\AndroidManifest.xml:51:13-37
+253            android:permission="android.permission.BIND_JOB_SERVICE" />
+253-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\89b2104a691a88e39abbe2d392f94dde\play-services-measurement-17.2.0\AndroidManifest.xml:52:13-69
+254
+255        <provider
+255-->[com.google.firebase:firebase-common:19.2.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\4e4713f3772bf141a33b2016ad5ef6a5\firebase-common-19.2.0\AndroidManifest.xml:19:9-23:39
+256            android:name="com.google.firebase.provider.FirebaseInitProvider"
+256-->[com.google.firebase:firebase-common:19.2.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\4e4713f3772bf141a33b2016ad5ef6a5\firebase-common-19.2.0\AndroidManifest.xml:20:13-77
+257            android:authorities="com.weedeo.shopadmin.firebaseinitprovider"
+257-->[com.google.firebase:firebase-common:19.2.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\4e4713f3772bf141a33b2016ad5ef6a5\firebase-common-19.2.0\AndroidManifest.xml:21:13-72
+258            android:exported="false"
+258-->[com.google.firebase:firebase-common:19.2.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\4e4713f3772bf141a33b2016ad5ef6a5\firebase-common-19.2.0\AndroidManifest.xml:22:13-37
+259            android:initOrder="100" />
+259-->[com.google.firebase:firebase-common:19.2.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\4e4713f3772bf141a33b2016ad5ef6a5\firebase-common-19.2.0\AndroidManifest.xml:23:13-36
+260
+261        <meta-data
+261-->[com.google.android.gms:play-services-basement:17.1.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\696fddedd5587847b77f07af54b58967\jetified-play-services-basement-17.1.0\AndroidManifest.xml:23:9-25:69
+262            android:name="com.google.android.gms.version"
+262-->[com.google.android.gms:play-services-basement:17.1.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\696fddedd5587847b77f07af54b58967\jetified-play-services-basement-17.1.0\AndroidManifest.xml:24:13-58
+263            android:value="@integer/google_play_services_version" />
+263-->[com.google.android.gms:play-services-basement:17.1.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\696fddedd5587847b77f07af54b58967\jetified-play-services-basement-17.1.0\AndroidManifest.xml:25:13-66
+264
+265        <provider
+265-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\a2d5dd02104055e60c3a72677f3d769f\lifecycle-process-2.1.0\AndroidManifest.xml:23:9-27:43
+266            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+266-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\a2d5dd02104055e60c3a72677f3d769f\lifecycle-process-2.1.0\AndroidManifest.xml:24:13-79
+267            android:authorities="com.weedeo.shopadmin.lifecycle-process"
+267-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\a2d5dd02104055e60c3a72677f3d769f\lifecycle-process-2.1.0\AndroidManifest.xml:25:13-69
+268            android:exported="false"
+268-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\a2d5dd02104055e60c3a72677f3d769f\lifecycle-process-2.1.0\AndroidManifest.xml:26:13-37
+269            android:multiprocess="true" />
+269-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\Vishnu\.gradle\caches\transforms-2\files-2.1\a2d5dd02104055e60c3a72677f3d769f\lifecycle-process-2.1.0\AndroidManifest.xml:27:13-40
+270    </application>
+271
+272</manifest>

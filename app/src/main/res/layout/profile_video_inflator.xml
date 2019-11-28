@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <VideoView
+
+        android:layout_centerInParent="true"
+        android:id="@+id/profieleImage"
+        android:layout_marginTop="@dimen/dimen_40dp"
+        android:layout_width="@dimen/dimen_300dp"
+        android:layout_height="@dimen/dimen_300dp"/>
+
+
+    <Button
+        android:textColor="@color/colorBlue"
+        android:text="Delete"
+        android:background="@drawable/rectangle"
+        android:layout_centerInParent="true"
+        android:id="@+id/delete"
+        android:backgroundTint="@color/colorBlue"
+        android:gravity="center"
+        android:textSize="@dimen/dimen_16sp"
+        android:layout_below="@+id/profieleImage"
+        android:layout_width="80dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="20dp"
+        tools:ignore="RtlSymmetry" />
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorRed"
+        android:text="Cancel"
+
+        android:layout_centerInParent="true"
+        android:textSize="@dimen/dimen_16sp"
+        android:id="@+id/cancel"
+        android:layout_marginBottom="@dimen/dimen_40dp"
+        android:backgroundTint="@color/colorRed"
+        android:gravity="center"
+        android:background="@drawable/rectangle"
+        android:layout_below="@+id/delete"
+        android:layout_width="80dp"
+        android:layout_height="20dp"
+        tools:ignore="RtlSymmetry" />
+
+
+
+</LinearLayout>

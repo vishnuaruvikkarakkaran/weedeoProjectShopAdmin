@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#fb0129</color>
+    <color name="colorViolet">#3d217b</color>
+    <color name="colorAsh">#3f4140</color>
+    <color name="colorBlue">#164cb2</color>
+    <color name="colorBtnNxt">#925fb851</color>
+    <color name="colorBlack">#000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="light_gray">#D3D3D3</color>
+    <color name="colorSignInBtn">#6748ff</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorshadeWhite">#D1C4C4</color>
+    <color name="colorRed">#fb0129</color>
+    <color name="dashbord">#4d3d6e</color>
+    <color name="lightGreen">#7ef291</color>
+    <color name="darkGreen">#0ac828</color>
+    <color name="lightred">#f6869a</color>
+    <color name="darkRed">#ee0e38</color>
+    <color name="colorPin">#B0DBD6D6</color>
+    <color name="locationTitleColor">#ABABAB</color>
+    <color name="text_selection_color">#2C2C2C</color>
+
+
+    <color name="colorActionBar">#52359F</color>
+    <color name="colorOpenColseBorder">#B8B8B8</color>
+    <color name="colorCallBackground">#0F131E</color>
+    <color name="colorVideocallButton">#05D5FD</color>
+    <color name="colorCalling">#3A3C48</color>
+    <color name="colorTransparent">#70FFFFFF</color>
+
+    <color name="colorShopTimingDivider">#37000000</color>
+
+
+
+
+
+</resources>

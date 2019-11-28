@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    android:background="@drawable/numchangebackgrnd"
+    tools:context=".modules.phonesigninpage.PhoneSignInActivity">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/dimen_100dp"
+        android:layout_marginEnd="@dimen/dimen_100dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_gravity="start"
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/opensans_bold"
+            android:text="Let's go in"
+            android:textColor="@color/colorBlack"
+            android:textSize="25sp" />
+
+        <TextView
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:layout_gravity="start"
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter your registered mobile number"
+            android:textSize="13sp"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/username_text_input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:theme="@style/underline"
+            app:hintTextColor="@color/colorAsh">
+
+            <EditText
+                android:id="@+id/inputnumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:gravity="start"
+                android:hint="Mobile Number"
+                android:inputType="number"
+                android:maxLength="10"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp"
+                android:theme="@style/underline"
+                app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/continu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/darkRed"
+            android:gravity="center"
+            android:layout_marginTop="25dp"
+            android:text="Sign In"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

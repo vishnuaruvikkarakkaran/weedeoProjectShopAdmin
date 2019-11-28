@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            app:itemIconTint="@color/colorBlack"
+            app:itemTextColor="@color/colorBlue"
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_dashboard_black_24dp"
+            android:title="@string/dash_board" />
+        <item
+            app:itemIconTint="@color/colorBlack"
+            app:itemTextColor="@color/colorBlue"
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_person_black_24dp"
+            android:title="@string/profile" />
+        <item
+            app:itemIconTint="@color/colorBlack"
+            app:itemTextColor="@color/colorBlue"
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_team_24dp"
+            android:title="@string/my_team" />
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/ic_corders_24dp"
+            android:title="@string/order" />
+        <item
+            android:id="@+id/nav_send"
+            android:icon="@drawable/ic_requests_24dp"
+            android:title="@string/requests" />
+
+    </group>
+
+    <!--<item android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_corders_24dp"
+                android:title="@string/order" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_requests_24dp"
+                android:title="@string/requests" />
+        </menu>
+    </item>-->
+
+</menu>

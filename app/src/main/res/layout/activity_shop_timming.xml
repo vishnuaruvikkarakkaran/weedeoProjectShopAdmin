@@ -1,0 +1,903 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorActionBar"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/updateTiming"
+        android:layout_below="@+id/toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvShopTiming"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/opensans_semibold"
+                android:padding="@dimen/dimen_20dp"
+                android:text="@string/text_update_shop_timing" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/tvShopTiming"
+                android:gravity="start"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dimen_10dp">
+
+                    <CheckBox
+                        android:id="@+id/checkboxMonday"
+                        android:layout_width="@dimen/dimen_0dp"
+                        android:layout_height="@dimen/dimen_50dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/opensans_semibold"
+                        android:text="@string/str_monday" />
+
+                    <TextView
+                        android:id="@+id/tvMondayOpenTime"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/dimen_45dp"
+                        android:layout_weight=".5"
+                        android:background="@drawable/border_background"
+                        android:fontFamily="@font/opensans_regular"
+                        android:gravity="center"
+                        android:hint="@string/Open"
+                        android:textColor="@color/colorBlack" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/dimen_50dp"
+                        android:layout_weight=".15"
+                        android:gravity="center"
+                        android:text="@string/text_separation"
+                        android:textColor="@color/colorBlack"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvMondayCloseTime"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/dimen_45dp"
+                        android:layout_weight=".5"
+                        android:background="@drawable/border_background"
+                        android:fontFamily="@font/opensans_regular"
+                        android:gravity="center"
+                        android:hint="@string/Closed"
+                        android:importantForAutofill="no"
+                        android:singleLine="true"
+                        android:textColor="@color/colorBlack" />
+
+                    <ImageView
+                        android:id="@+id/ivTimeEditMonday"
+                        android:layout_width="@dimen/dimen_25dp"
+                        android:layout_height="@dimen/dimen_25dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/dimen_10dp"
+                        android:background="@drawable/ic_add"
+                        android:contentDescription="@string/ic_time_edit" />
+
+                </LinearLayout>
+
+                <!-- MONDAY SECOND TIME VIEW -->
+                <LinearLayout
+                    android:id="@+id/llMondaySecondTiming"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dimen_10dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="@dimen/dimen_0dp"
+                        android:layout_height="@dimen/dimen_50dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/opensans_semibold" />
+
+                    <TextView
+                        android:id="@+id/tvMondayOpenSecondTime"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/dimen_45dp"
+                        android:layout_weight=".5"
+                        android:background="@drawable/border_background"
+                        android:fontFamily="@font/opensans_regular"
+                        android:gravity="center"
+                        android:hint="@string/Open"
+                        android:textColor="@color/colorBlack" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/dimen_50dp"
+                        android:layout_weight=".15"
+                        android:gravity="center"
+                        android:text="@string/text_separation"
+                        android:textColor="@color/colorBlack"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvMondayCloseSecondTime"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/dimen_45dp"
+                        android:layout_weight=".5"
+                        android:background="@drawable/border_background"
+                        android:fontFamily="@font/opensans_regular"
+                        android:gravity="center"
+                        android:hint="@string/Closed"
+                        android:textColor="@color/colorBlack" />
+
+                    <ImageView
+                        android:layout_width="@dimen/dimen_25dp"
+                        android:layout_height="@dimen/dimen_25dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/dimen_10dp"
+                        android:contentDescription="@string/ic_time_edit" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_0_5"
+                    android:background="@color/colorShopTimingDivider" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dimen_10dp">
+
+                    <CheckBox
+                        android:id="@+id/checkboxTuesday"
+                        android:layout_width="@dimen/dimen_0dp"
+                        android:layout_height="@dimen/dimen_50dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/opensans_semibold"
+                        android:text="@string/str_tuesday" />
+
+                    <TextView
+                        android:id="@+id/tvTuesdayOpenTime"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/dimen_45dp"
+                        android:layout_weight=".5"
+                        android:background="@drawable/border_background"
+                        android:fontFamily="@font/opensans_regular"
+                        android:gravity="center"
+                        android:hint="@string/Open"
+                        android:importantForAutofill="no"
+                        android:singleLine="true"
+                        android:textColor="@color/colorBlack" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/dimen_50dp"
+                        android:layout_weight=".15"
+                        android:gravity="center"
+                        android:text="@string/text_separation"
+                        android:textColor="@color/colorBlack"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvTuesdayCloseTime"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/dimen_45dp"
+                        android:layout_weight=".5"
+                        android:background="@drawable/border_background"
+                        android:fontFamily="@font/opensans_regular"
+                        android:gravity="center"
+                        android:hint="@string/Closed"
+                        android:importantForAutofill="no"
+                        android:singleLine="true"
+                        android:textColor="@color/colorBlack" />
+
+                    <ImageView
+                        android:id="@+id/ivTimeEditTuesday"
+                        android:layout_width="@dimen/dimen_25dp"
+                        android:layout_height="@dimen/dimen_25dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/dimen_10dp"
+                        android:background="@drawable/ic_add"
+                        android:contentDescription="@string/ic_time_edit" />
+
+                </LinearLayout>
+
+                <!-- TUESDAY SECOND TIME VIEW -->
+                <LinearLayout
+                    android:id="@+id/llTuesdaySecondTiming"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dimen_10dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="@dimen/dimen_0dp"
+                        android:layout_height="@dimen/dimen_50dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/opensans_semibold" />
+
+                    <TextView
+                        android:id="@+id/tvTuesdayOpenSecondTime"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/dimen_45dp"
+                        android:layout_weight=".5"
+                        android:background="@drawable/border_background"
+                        android:fontFamily="@font/opensans_regular"
+                        android:gravity="center"
+                        android:hint="@string/Open"
+                        android:textColor="@color/colorBlack" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/dimen_50dp"
+                        android:layout_weight=".15"
+                        android:gravity="center"
+                        android:text="@string/text_separation"
+                        android:textColor="@color/colorBlack"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvTuesdayCloseSecondTime"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/dimen_45dp"
+                        android:layout_weight=".5"
+                        android:background="@drawable/border_background"
+                        android:fontFamily="@font/opensans_regular"
+                        android:gravity="center"
+                        android:hint="@string/Closed"
+                        android:textColor="@color/colorBlack" />
+
+                    <ImageView
+                        android:layout_width="@dimen/dimen_25dp"
+                        android:layout_height="@dimen/dimen_25dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/dimen_10dp"
+                        android:contentDescription="@string/ic_time_edit" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_0_5"
+                    android:background="@color/colorShopTimingDivider" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dimen_10dp">
+
+                    <CheckBox
+                        android:id="@+id/checkboxWednesday"
+                        android:layout_width="@dimen/dimen_0dp"
+                        android:layout_height="@dimen/dimen_50dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/opensans_semibold"
+                        android:text="@string/str_wednesday" />
+
+                    <TextView
+                        android:id="@+id/tvWednesdayOpenTime"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/dimen_45dp"
+                        android:layout_weight=".5"
+                        android:background="@drawable/border_background"
+                        android:fontFamily="@font/opensans_regular"
+                        android:gravity="center"
+                        android:hint="@string/Open"
+                        android:importantForAutofill="no"
+                        android:singleLine="true"
+                        android:textColor="@color/colorBlack" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/dimen_50dp"
+                        android:layout_weight=".15"
+                        android:gravity="center"
+                        android:text="@string/text_separation"
+                        android:textColor="@color/colorBlack"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvWednesdayCloseTime"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/dimen_45dp"
+                        android:layout_weight=".5"
+                        android:background="@drawable/border_background"
+                        android:fontFamily="@font/opensans_regular"
+                        android:gravity="center"
+                        android:hint="@string/Closed"
+                        android:importantForAutofill="no"
+                        android:singleLine="true"
+                        android:textColor="@color/colorBlack" />
+
+                    <ImageView
+                        android:id="@+id/ivTimeEditWednesday"
+                        android:layout_width="@dimen/dimen_25dp"
+                        android:layout_height="@dimen/dimen_25dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/dimen_10dp"
+                        android:background="@drawable/ic_add"
+                        android:contentDescription="@string/ic_time_edit" />
+
+                </LinearLayout>
+
+                <!-- WEDNESDAY SECOND TIME VIEW -->
+                <LinearLayout
+                    android:id="@+id/llWednesdaySecondTiming"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dimen_10dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="@dimen/dimen_0dp"
+                        android:layout_height="@dimen/dimen_50dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/opensans_semibold" />
+
+                    <TextView
+                        android:id="@+id/tvWednesdayOpenSecondTime"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/dimen_45dp"
+                        android:layout_weight=".5"
+                        android:background="@drawable/border_background"
+                        android:fontFamily="@font/opensans_regular"
+                        android:gravity="center"
+                        android:hint="@string/Open"
+                        android:textColor="@color/colorBlack" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/dimen_50dp"
+                        android:layout_weight=".15"
+                        android:gravity="center"
+                        android:text="@string/text_separation"
+                        android:textColor="@color/colorBlack"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvWednesdaycloseSecondTime"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/dimen_45dp"
+                        android:layout_weight=".5"
+                        android:background="@drawable/border_background"
+                        android:fontFamily="@font/opensans_regular"
+                        android:gravity="center"
+                        android:hint="@string/Closed"
+                        android:textColor="@color/colorBlack" />
+
+                    <ImageView
+                        android:layout_width="@dimen/dimen_25dp"
+                        android:layout_height="@dimen/dimen_25dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/dimen_10dp"
+                        android:contentDescription="@string/ic_time_edit" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_0_5"
+                    android:background="@color/colorShopTimingDivider" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dimen_10dp">
+
+                    <CheckBox
+                        android:id="@+id/checkboxThursday"
+                        android:layout_width="@dimen/dimen_0dp"
+                        android:layout_height="@dimen/dimen_50dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/opensans_semibold"
+                        android:text="@string/str_thursday" />
+
+                    <TextView
+                        android:id="@+id/tvThursdayOpenTime"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/dimen_45dp"
+                        android:layout_weight=".5"
+                        android:background="@drawable/border_background"
+                        android:fontFamily="@font/opensans_regular"
+                        android:gravity="center"
+                        android:hint="@string/Open"
+                        android:importantForAutofill="no"
+                        android:singleLine="true"
+                        android:textColor="@color/colorBlack" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/dimen_50dp"
+                        android:layout_weight=".15"
+                        android:gravity="center"
+                        android:text="@string/text_separation"
+                        android:textColor="@color/colorBlack"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvThursdayCloseTime"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/dimen_45dp"
+                        android:layout_weight=".5"
+                        android:background="@drawable/border_background"
+                        android:fontFamily="@font/opensans_regular"
+                        android:gravity="center"
+                        android:hint="@string/Closed"
+                        android:importantForAutofill="no"
+                        android:singleLine="true"
+                        android:textColor="@color/colorBlack" />
+
+                    <ImageView
+                        android:id="@+id/ivTimeEditThursday"
+                        android:layout_width="@dimen/dimen_25dp"
+                        android:layout_height="@dimen/dimen_25dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/dimen_10dp"
+                        android:background="@drawable/ic_add"
+                        android:contentDescription="@string/ic_time_edit" />
+
+                </LinearLayout>
+
+                <!-- THURSDAY SECOND TIME VIEW -->
+                <LinearLayout
+                    android:id="@+id/llThursdaySecondTiming"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dimen_10dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="@dimen/dimen_0dp"
+                        android:layout_height="@dimen/dimen_50dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/opensans_semibold" />
+
+                    <TextView
+                        android:id="@+id/tvThursdayOpenSecondTime"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/dimen_45dp"
+                        android:layout_weight=".5"
+                        android:background="@drawable/border_background"
+                        android:fontFamily="@font/opensans_regular"
+                        android:gravity="center"
+                        android:hint="@string/Open"
+                        android:textColor="@color/colorBlack" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/dimen_50dp"
+                        android:layout_weight=".15"
+                        android:gravity="center"
+                        android:text="@string/text_separation"
+                        android:textColor="@color/colorBlack"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvThursdayCloseSecondTime"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/dimen_45dp"
+                        android:layout_weight=".5"
+                        android:background="@drawable/border_background"
+                        android:fontFamily="@font/opensans_regular"
+                        android:gravity="center"
+                        android:hint="@string/Closed"
+                        android:textColor="@color/colorBlack" />
+
+                    <ImageView
+                        android:layout_width="@dimen/dimen_25dp"
+                        android:layout_height="@dimen/dimen_25dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/dimen_10dp"
+                        android:contentDescription="@string/ic_time_edit" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_0_5"
+                    android:background="@color/colorShopTimingDivider" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dimen_10dp">
+
+                    <CheckBox
+                        android:id="@+id/checkboxFriday"
+                        android:layout_width="@dimen/dimen_0dp"
+                        android:layout_height="@dimen/dimen_50dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/opensans_semibold"
+                        android:text="@string/str_friday" />
+
+                    <TextView
+                        android:id="@+id/tvFridayOpenTime"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/dimen_45dp"
+                        android:layout_weight=".5"
+                        android:background="@drawable/border_background"
+                        android:fontFamily="@font/opensans_regular"
+                        android:gravity="center"
+                        android:hint="@string/Open"
+                        android:importantForAutofill="no"
+                        android:singleLine="true"
+                        android:textColor="@color/colorBlack" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/dimen_50dp"
+                        android:layout_weight=".15"
+                        android:gravity="center"
+                        android:text="@string/text_separation"
+                        android:textColor="@color/colorBlack"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvFridayCloseTime"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/dimen_45dp"
+                        android:layout_weight=".5"
+                        android:background="@drawable/border_background"
+                        android:fontFamily="@font/opensans_regular"
+                        android:gravity="center"
+                        android:hint="@string/Closed"
+                        android:importantForAutofill="no"
+                        android:singleLine="true"
+                        android:textColor="@color/colorBlack" />
+
+                    <ImageView
+                        android:id="@+id/ivTimeEditFriday"
+                        android:layout_width="@dimen/dimen_25dp"
+                        android:layout_height="@dimen/dimen_25dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/dimen_10dp"
+                        android:background="@drawable/ic_add"
+                        android:contentDescription="@string/ic_time_edit" />
+
+                </LinearLayout>
+
+                <!-- FRIDAY SECOND TIME VIEW -->
+                <LinearLayout
+                    android:id="@+id/llFridaySecondTiming"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dimen_10dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="@dimen/dimen_0dp"
+                        android:layout_height="@dimen/dimen_50dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/opensans_semibold" />
+
+                    <TextView
+                        android:id="@+id/tvFridayOpenSecondTime"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/dimen_45dp"
+                        android:layout_weight=".5"
+                        android:background="@drawable/border_background"
+                        android:fontFamily="@font/opensans_regular"
+                        android:gravity="center"
+                        android:hint="@string/Open"
+                        android:textColor="@color/colorBlack" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/dimen_50dp"
+                        android:layout_weight=".15"
+                        android:gravity="center"
+                        android:text="@string/text_separation"
+                        android:textColor="@color/colorBlack"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvFridayCloseSecondTime"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/dimen_45dp"
+                        android:layout_weight=".5"
+                        android:background="@drawable/border_background"
+                        android:fontFamily="@font/opensans_regular"
+                        android:gravity="center"
+                        android:hint="@string/Closed"
+                        android:textColor="@color/colorBlack" />
+
+                    <ImageView
+                        android:layout_width="@dimen/dimen_25dp"
+                        android:layout_height="@dimen/dimen_25dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/dimen_10dp"
+                        android:contentDescription="@string/ic_time_edit" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_0_5"
+                    android:background="@color/colorShopTimingDivider" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dimen_10dp">
+
+                    <CheckBox
+                        android:id="@+id/checkboxSaturday"
+                        android:layout_width="@dimen/dimen_0dp"
+                        android:layout_height="@dimen/dimen_50dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/opensans_semibold"
+                        android:text="@string/str_saturday" />
+
+                    <TextView
+                        android:id="@+id/tvSaturdayOpenTime"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/dimen_45dp"
+                        android:layout_weight=".5"
+                        android:background="@drawable/border_background"
+                        android:fontFamily="@font/opensans_regular"
+                        android:gravity="center"
+                        android:hint="@string/Open"
+                        android:importantForAutofill="no"
+                        android:singleLine="true"
+                        android:textColor="@color/colorBlack" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/dimen_50dp"
+                        android:layout_weight=".15"
+                        android:gravity="center"
+                        android:text="@string/text_separation"
+                        android:textColor="@color/colorBlack"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvSaturdayCloseTime"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/dimen_45dp"
+                        android:layout_weight=".5"
+                        android:background="@drawable/border_background"
+                        android:fontFamily="@font/opensans_regular"
+                        android:gravity="center"
+                        android:hint="@string/Closed"
+                        android:importantForAutofill="no"
+                        android:singleLine="true"
+                        android:textColor="@color/colorBlack" />
+
+                    <ImageView
+                        android:id="@+id/ivTimeEditSaturday"
+                        android:layout_width="@dimen/dimen_25dp"
+                        android:layout_height="@dimen/dimen_25dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/dimen_10dp"
+                        android:background="@drawable/ic_add"
+                        android:contentDescription="@string/ic_time_edit" />
+
+                </LinearLayout>
+
+                <!-- SATURDAY SECOND TIME VIEW -->
+                <LinearLayout
+                    android:id="@+id/llSaturdaySecondTiming"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dimen_10dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="@dimen/dimen_0dp"
+                        android:layout_height="@dimen/dimen_50dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/opensans_semibold" />
+
+                    <TextView
+                        android:id="@+id/tvSaturdayOpenSecondTime"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/dimen_45dp"
+                        android:layout_weight=".5"
+                        android:background="@drawable/border_background"
+                        android:fontFamily="@font/opensans_regular"
+                        android:gravity="center"
+                        android:hint="@string/Open"
+                        android:textColor="@color/colorBlack" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/dimen_50dp"
+                        android:layout_weight=".15"
+                        android:gravity="center"
+                        android:text="@string/text_separation"
+                        android:textColor="@color/colorBlack"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvSaturdayCloseSecondTime"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/dimen_45dp"
+                        android:layout_weight=".5"
+                        android:background="@drawable/border_background"
+                        android:fontFamily="@font/opensans_regular"
+                        android:gravity="center"
+                        android:hint="@string/Closed"
+                        android:textColor="@color/colorBlack" />
+
+                    <ImageView
+                        android:layout_width="@dimen/dimen_25dp"
+                        android:layout_height="@dimen/dimen_25dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/dimen_10dp"
+                        android:contentDescription="@string/ic_time_edit" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_0_5"
+                    android:background="@color/colorShopTimingDivider" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dimen_10dp">
+
+                    <CheckBox
+                        android:id="@+id/checkboxSunday"
+                        android:layout_width="@dimen/dimen_0dp"
+                        android:layout_height="@dimen/dimen_50dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/opensans_semibold"
+                        android:text="@string/str_sunday" />
+
+                    <TextView
+                        android:id="@+id/tvSundayOpenTime"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/dimen_45dp"
+                        android:layout_weight=".5"
+                        android:background="@drawable/border_background"
+                        android:fontFamily="@font/opensans_regular"
+                        android:gravity="center"
+                        android:hint="@string/Open"
+                        android:importantForAutofill="no"
+                        android:singleLine="true"
+                        android:textColor="@color/colorBlack" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/dimen_50dp"
+                        android:layout_weight=".15"
+                        android:gravity="center"
+                        android:text="@string/text_separation"
+                        android:textColor="@color/colorBlack"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvSundayCloseTime"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/dimen_45dp"
+                        android:layout_weight=".5"
+                        android:background="@drawable/border_background"
+                        android:fontFamily="@font/opensans_regular"
+                        android:gravity="center"
+                        android:hint="@string/Closed"
+                        android:importantForAutofill="no"
+                        android:singleLine="true"
+                        android:textColor="@color/colorBlack" />
+
+                    <ImageView
+                        android:id="@+id/ivTimeEditSunday"
+                        android:layout_width="@dimen/dimen_25dp"
+                        android:layout_height="@dimen/dimen_25dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/dimen_10dp"
+                        android:background="@drawable/ic_add"
+                        android:contentDescription="@string/ic_time_edit" />
+
+                </LinearLayout>
+
+                <!-- SUNDAY SECOND TIME VIEW -->
+                <LinearLayout
+                    android:id="@+id/llSundaySecondTiming"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dimen_10dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="@dimen/dimen_0dp"
+                        android:layout_height="@dimen/dimen_50dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/opensans_semibold" />
+
+                    <TextView
+                        android:id="@+id/tvSundayOpenSecondTime"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/dimen_45dp"
+                        android:layout_weight=".5"
+                        android:background="@drawable/border_background"
+                        android:fontFamily="@font/opensans_regular"
+                        android:gravity="center"
+                        android:hint="@string/Open"
+                        android:textColor="@color/colorBlack" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/dimen_50dp"
+                        android:layout_weight=".15"
+                        android:gravity="center"
+                        android:text="@string/text_separation"
+                        android:textColor="@color/colorBlack"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvSundayCloseSecondTime"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/dimen_45dp"
+                        android:layout_weight=".5"
+                        android:background="@drawable/border_background"
+                        android:fontFamily="@font/opensans_regular"
+                        android:gravity="center"
+                        android:hint="@string/Closed"
+                        android:textColor="@color/colorBlack" />
+
+                    <ImageView
+                        android:layout_width="@dimen/dimen_25dp"
+                        android:layout_height="@dimen/dimen_25dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/dimen_10dp"
+                        android:contentDescription="@string/ic_time_edit" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_0_5"
+                    android:background="@color/colorShopTimingDivider" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/updateTiming"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:layout_marginEnd="@dimen/dimen_150dp"
+        android:layout_marginBottom="@dimen/dimen_10dp"
+        android:background="@drawable/btn_rectangle_background"
+        android:fontFamily="@font/opensans_bold"
+        android:text="@string/text_update"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

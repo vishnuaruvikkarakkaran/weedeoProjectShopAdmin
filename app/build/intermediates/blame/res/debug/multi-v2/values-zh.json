@@ -1,0 +1,43 @@
+{
+    "logs": [
+        {
+            "outputFile": "E:\\Vishnu V Nair\\weedeo-shopadmin-android28112019\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-zh\\values-zh.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Vishnu\\.gradle\\caches\\transforms-2\\files-2.1\\4605848de7f5f80d3b6d2cedbe95f631\\jetified-android-crop-1.0.1\\res\\values-zh\\values-zh.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "215,283,325,376,425",
+                        "endColumns": "67,41,50,48,43",
+                        "endOffsets": "278,320,371,420,464"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "100,168,210,261,310",
+                        "endColumns": "67,41,50,48,43",
+                        "endOffsets": "163,205,256,305,349"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Vishnu\\.gradle\\caches\\transforms-2\\files-2.1\\ad697d3cf921af674bb23cc823f834d4\\jetified-ucrop-2.2.2\\res\\values-zh\\values-zh.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,109,163",
+                        "endColumns": "53,53,46",
+                        "endOffsets": "104,158,205"
+                    },
+                    "to": {
+                        "startLines": "7,8,9",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "354,408,462",
+                        "endColumns": "53,53,46",
+                        "endOffsets": "403,457,504"
+                    }
+                }
+            ]
+        }
+    ]
+}
